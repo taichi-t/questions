@@ -27,30 +27,32 @@
     <dd id="resultpond">kg</dd>
     
     </dl>
+
+    <script>
+        // weightconverterk kg to pond
+         function weightConverterK(){
+             var kg = document.getElementById("kg").value;
+        // make kg change words to number.
+             var kg = parseInt(kg);
+        
+            var resultkg = kg * 2.2;
+        
+            document.getElementById("resultkg").innerHTML = resultkg
+        
+            }
+        // weightconverterP pond to kg
+            function weightConverterP(){
+             var pond = document.getElementById("ponds").value;
+        // make pond change words to number
+             var pond = parseInt(pond);
+        
+            var resultpond = pond / 2.2;
+        
+            document.getElementById("resultpond").innerHTML = resultpond;
+        }
+        
+        </script>
 </body>
 
-<script>
-// weightconverterk kg to pond
- function weightConverterK(){
-     var kg = document.getElementById("kg").value;
-// make kg change words to number.
-     var kg = parseInt(kg);
 
-    var resultkg = kg * 2.2;
-
-    document.getElementById("resultkg").innerHTML = resultkg
-
-    }
-// weightconverterP pond to kg
-    function weightConverterP(){
-     var pond = document.getElementById("ponds").value;
-// make pond change words to number
-     var pond = parseInt(pond);
-
-    var resultpond = pond / 2.2;
-
-    document.getElementById("resultpond").innerHTML = resultpond;
-}
-
-</script>
 </html>
